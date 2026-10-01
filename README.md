@@ -4,7 +4,7 @@ Turn a YouTube lecture, or a whole playlist, into notes that keep the spoken wor
 
 There is no language model. Captions come from YouTube. Frames come from the video. The notebook lines the two up by time and writes a self-contained HTML page and a Word file.
 
-Open [`Notebooks/YT_LectureNotes_YTDlp.ipynb`](Notebooks/YT_LectureNotes_YTDlp.ipynb) and run it top to bottom. It works in Jupyter and in Google Colab.
+Open [`Notebooks/YT_LectureNotes.ipynb`](Notebooks/YT_LectureNotes.ipynb) and run it top to bottom. It works in Jupyter and in Google Colab.
 
 ## What you get
 
@@ -35,7 +35,7 @@ YouTube’s automatic captions repeat earlier words in each new cue. Repeated wo
 
 ## Run it
 
-1. Open `Notebooks/YT_LectureNotes_YTDlp.ipynb`.
+1. Open `Notebooks/YT_LectureNotes.ipynb`.
 2. Run the cells from the top through **Settings**. The setup cell installs `yt-dlp`, `pillow`, `python-docx`, and `imageio-ffmpeg`. That last package includes an ffmpeg binary, so a separate ffmpeg install is optional.
 3. In the **Run** cell, set `SOURCE_URL` to a video or a `/playlist?list=...` URL.
 4. Run that cell. On Colab, set `OUTPUT_DIR` to something like `/content/output` if you want the files on the Colab disk.
